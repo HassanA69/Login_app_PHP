@@ -1,0 +1,221 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Orbitron", sans-serif; /* خط مستقبلي */
+  background-image: url("blade.gif"); /* خلفية مستوحاة من Blade Runner */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff; /* نص أبيض */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Form Container */
+form {
+  background: rgba(0, 0, 0, 0.7); /* خلفية سوداء شفافة */
+  border: 1px solid rgba(0, 255, 255, 0.3); /* إطار نيون */
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 0, 255, 0.3);
+  animation: glow 2s infinite alternate;
+  text-align: center;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 50px rgba(255, 0, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 60px rgba(255, 0, 255, 0.5);
+  }
+}
+
+/* Form Headings */
+form h2 {
+  font-size: 2rem;
+  color: #00ffff; /* أزرق نيون */
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+  font-weight: bold;
+}
+
+/* Labels */
+form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #ff00ff; /* بنفسجي نيون */
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Inputs */
+form input[type="email"],
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 1rem;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+form input[type="email"]:focus,
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px 15px;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+}
+
+/* Links Inside Forms */
+form a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #00ffff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+form a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+/* Error Messages */
+form p.error {
+  font-size: 1rem;
+  color: #ff4040; /* أحمر تحذيري */
+  margin-top: 10px;
+}
+
+/* Success Messages */
+form p.success {
+  font-size: 1rem;
+  color: #00ff00; /* أخضر نجاح */
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  form h2 {
+    font-size: 1.8rem;
+  }
+}
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Orbitron", sans-serif; /* خط مستقبلي */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Glow Effect for Text */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5),
+      0 0 20px rgba(255, 0, 255, 0.3);
+  }
+  to {
+    text-shadow: 0 0 30px rgba(0, 255, 255, 0.7),
+      0 0 60px rgba(255, 0, 255, 0.5);
+  }
+}
+
+/* Headings */
+h2 {
+  font-size: 3rem;
+  color: #00ffff; /* أزرق نيون */
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+
+/* Links (Optional) */
+a {
+  font-size: 1.1rem;
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid rgba(0, 255, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #ff00ff; /* لون عند التحويم */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
